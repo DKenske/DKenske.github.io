@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>psdtowebproducaoSITEMARYLANDantigohome.psd</title>
+		<link href="styles.css" rel="stylesheet" type="text/css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+		<link href="../styles.css" rel="stylesheet" type="text/css">
+	</head>
+
+	<body id="secondary">
+		<div id="Layer4"><img src="images/Layer4.png"></div>
+		<header id="optionHeader">
+			<div class='op1'>A Coleção</div>
+			<div class='op2'>Pedagógico</div>
+			<div class='op3'>Formação</div>
+			<div class='op4'>Autora</div>
+			<div class='op5'>Apoio</div>
+			<div class='op6'>Contato</div>
+		</header>
+		<div id="background">
+			<div id="VectorSmartObject"><img src="images/VectorSmartObject.png"></div>
+			<div id="MARYLAND"><img src="images/MARYLAND.png"></div>
+			<div id="CURIOSIDADEEOUSADIAE"><img src="images/CURIOSIDADEEOUSADIAE.png"></div>
+			<div id="COLEO"><img src="images/COLEO.png"></div>
+			<div id="LOGOEDITORA2013"><img src="images/LOGOEDITORA2013.png"></div>
+		</div>
+		<div class="sidebar" id="sidebar">
+			<img class="person" src="./images/person.png"/>
+					<input class="username" placeholder="Nome de usuário"/>
+					<input class="senha" type="password"  placeholder="Senha"/>
+					<button class="submit" onclick={changePage()}>Login</button>
+			
+		</div>
+		<div class="plateDiv" onclick={getLogin()}>
+			<img class="plate" src="./images/placa.png" onclick={getLogin()}/>
+			<a class="plateText" onclick={getLogin()}> Acesso Restrito</a>
+		</div>
+
+		<script>
+			function getLogin() {
+				const sideBar = document.getElementById("sidebar")
+				sideBar.style.transitionTimingFunction = "ease";
+				sideBar.style.transitionDuration = "0.5s";
+				sideBar.style.transform = "translate-x(400)"
+				sideBar.style.width = "15%";
+			}
+
+			function changePage() {
+				 window.location.pathname = '../loged.html'
+			}
+			
+		</script>
+		<!-- <img class="placa" src="placa de madeira SETA.png"> text </img> -->
+	</body>
+ </html>
